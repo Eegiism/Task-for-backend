@@ -7,7 +7,6 @@ function createInvoice(invoice, path) {
   generateHeader(doc);
   generateCustomerInformation(doc, invoice);
   generateInvoiceTable(doc, invoice);
-  generateFooter(doc);
 
   doc.end();
   doc.pipe(fs.createWriteStream(path));
