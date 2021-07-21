@@ -69,7 +69,7 @@ function generateCustomerInformation(doc, invoice) {
 
       .fontSize(10)
       .font('Helvetica-Bold')
-      .text("Angegebene Lieferadresse:", 225, customerInformationTop)
+      .text("Angegebene Rechnungadresse:", 225, customerInformationTop)
       .font('Helvetica')
       .text(invoice.order.shippingAddress.name, 225, customerInformationTop + 15)
       .text(invoice.order.shippingAddress.address1, 225, customerInformationTop + 30)
