@@ -1,0 +1,23 @@
+{
+  "name": "@beeanco/invoice-pdf-service",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Your objective is to develop a node.js microservice that renders invoices to PDFs.",
+  "license": "UNLICENSED",
+  "author": "Your name here...",
+  "main": "app.js",
+  "scripts": {
+    "test": "curl -X POST -H \"Content-Type: application/json\" -d @./test/fixtures/sample-request.json http://localhost:3000 --output test/results/sample-request.pdf",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pdfkit": "^0.12.1"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "devDependencies": {}
+}
