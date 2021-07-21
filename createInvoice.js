@@ -69,7 +69,7 @@ function generateCustomerInformation(doc, invoice) {
 
       .fontSize(10)
       .font('Helvetica-Bold')
-      .text("Angegebene Rechnungadresse:", 225, customerInformationTop)
+      .text("Angegebene Rechnungsadresse:", 225, customerInformationTop)
       .font('Helvetica')
       .text(invoice.order.shippingAddress.name, 225, customerInformationTop + 15)
       .text(invoice.order.shippingAddress.address1, 225, customerInformationTop + 30)
@@ -142,17 +142,6 @@ function generateInvoiceTable(doc, invoice) {
     formatCurrency(totalPrice)
   );
 
-}
-
-function generateFooter(doc) {
-  doc
-    .fontSize(10)
-    .text(
-      "Payment is due within 15 days. Thank you for your business.",
-      50,
-      780,
-      { align: "center", width: 500 }
-    );
 }
 
 function generateTableRow(
